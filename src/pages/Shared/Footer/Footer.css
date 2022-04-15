@@ -1,10 +1,17 @@
 footer{
     color: white;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #07121c;
 }
 footer ul li{
     padding: 7px 10px;
     font-size: 15px;
     list-style: none;
+}
+
+@media only screen and (max-width:800px){
+    div{
+        margin: 15px 0;
+        flex-direction: column;
+    }
 }
