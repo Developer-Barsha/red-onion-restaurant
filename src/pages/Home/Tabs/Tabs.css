@@ -1,3 +1,10 @@
-activeKey{
-    color:crimson;
+.nav-link {
+    color: black !important;
+}
+.nav-link:hover {
+    color: crimson !important;
+}
+.nav-link.active {
+    color: crimson !important;
+    border-bottom: 2px solid crimson !important;
 }
