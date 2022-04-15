@@ -19,7 +19,7 @@
     position: relative;
 }
 
-.top-section input{
+input{
     width: 320px;
     border: 1px solid #ccc;
     height: 45px;
@@ -28,11 +28,11 @@
     border-radius: 50px;
 }
 
-input[type=text]:focus {
+input:focus {
     padding: 5px 10x;
     width: 400px;
     outline: none;
-    border-color: white;
+    border-color: crimson;
     transition: ease-in-out, width .35s ease-in-out;
 }
 

@@ -19,8 +19,8 @@ const Header = () => {
                 />
 
                 <CustomLink to={'/home'}  onClick={() => setModalShow(true)}>{<ShoppingCartIcon style={{ width: '22px' }} />}</CustomLink>
-                <CustomLink to={'/'}>Home</CustomLink>
                 <CustomLink to={'/login'}>Login</CustomLink>
+                <CustomLink className='signup-btn' to={'/signup'}>Signup</CustomLink>
             </nav>
         </header>
     );
