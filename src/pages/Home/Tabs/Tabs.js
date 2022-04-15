@@ -14,7 +14,7 @@ function ControlledTabs() {
         id="controlled-tab-example"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="my-3 d-flex justify-content-center border-0"
+        className="mt-5 d-flex justify-content-center border-0"
       >
         <Tab eventKey="breakfasts" title="Breakfasts">
           <Breakfasts />
