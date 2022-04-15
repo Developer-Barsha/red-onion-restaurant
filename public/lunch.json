@@ -1,0 +1,50 @@
+[
+    {
+        "id":1, 
+        "name":"Healthy Meal Plan",
+        "photo":"https://i.ibb.co/SvKPpNP/lunch1.png",
+        "price": 250,
+        "description":"A healthy meal plan for lunch"
+    },
+    
+    {
+        "id":2, 
+        "name":"Fried Chicken Bento",
+        "photo":"https://i.ibb.co/WFz2ZNw/lunch2.png",
+        "price": 350,
+        "description":"A fruite salad with a lots of nutritions will get you a good health, A perfect meal yo start your day with."
+    },
+    
+    {
+        "id":3, 
+        "name":"Tarragon Rubbed Salmon",
+        "photo":"https://i.ibb.co/n07h9hx/lunch3.png",
+        "price": 290,
+        "description":"It is so delicious and yummy Rubbed Salmon"
+    },
+
+    {
+        "id":4, 
+        "name":"Inidan Lunch",
+        "photo":"https://i.ibb.co/LnhwCbR/lunch4.png",
+        "price": 300,
+        "description":"An regular Indian countryside meal"
+    },
+
+    {
+        "id":5, 
+        "name":"Beef Steak",
+        "photo":"https://i.ibb.co/qFnDrk2/lunch5.png",
+        "price": 150,
+        "description":"A delicious beefy Lunch for all. You gotta try it"
+    },
+
+    {
+        "id":6, 
+        "name":"Gazzed Salmon Pepper",
+        "photo":"https://i.ibb.co/5Lpt7c7/lunch6.png",
+        "price": 200,
+        "description":"Honey Gazzed Sea Salmon Meal with red peppers"
+    }
+
+]

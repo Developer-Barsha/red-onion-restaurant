@@ -1,0 +1,50 @@
+[
+    {
+        "id":1, 
+        "name":"Fried Egg Meal",
+        "photo":"https://i.ibb.co/XbxXwmb/breakfast1.png",
+        "price": 550,
+        "description":"This meal will give you energy as you are going to eat it in the very morning."
+    },
+    
+    {
+        "id":2, 
+        "name":"Fruit Salad",
+        "photo":"https://i.ibb.co/xLdv0nk/breakfast2.png",
+        "price": 500,
+        "description":"A fruite salad with a lots of nutritions will get you a good health, A perfect meal yo start your day with."
+    },
+    
+    {
+        "id":3, 
+        "name":"Hum Burger",
+        "photo":"https://i.ibb.co/pvFpdmM/breakfast3.png",
+        "price": 290,
+        "description":"Once you try it you will remember its taste forever. It is so delicious and yummy"
+    },
+
+    {
+        "id":4, 
+        "name":"Vegetable Saldas",
+        "photo":"https://i.ibb.co/Qr6n4sF/breakfast4.png",
+        "price": 350,
+        "description":"Another typ of salad to start your day with. It will help you freshen up"
+    },
+
+    {
+        "id":5, 
+        "name":"Bread and Egg",
+        "photo":"https://i.ibb.co/w4Lh99x/breakfast5.png",
+        "price": 450,
+        "description":"A simple and delicious breakfast of all. You gotta give it a try"
+    },
+
+    {
+        "id":6, 
+        "name":"Bread Egg",
+        "photo":"https://i.ibb.co/YZh1RY0/breakfast6.png",
+        "price": 500,
+        "description":"This meal includes bread, meat, fried eggs, vegetables such as tomato, lattuce etc."
+    }
+
+]
