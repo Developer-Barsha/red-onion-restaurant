@@ -6,6 +6,7 @@ import Lunches from '../Lunches/Lunches';
 import Dinners from '../Dinners/Dinners';
 import './Tabs.css';
 import { useNavigate } from 'react-router-dom';
+import { ShoppingCartIcon } from '@heroicons/react/solid';
 
 function ControlledTabs() {
   const [key, setKey] = useState('lunches');
@@ -30,7 +31,10 @@ function ControlledTabs() {
           <Dinners />
         </Tab>
       </Tabs>
-      <button onClick={()=>navigate='/checkout'}>Proceed Checkout</button>
+      <button className='custom-btn d-flex my-2 mx-auto' onClick={()=>navigate('/checkout')}>
+        <ShoppingCartIcon style={{width:'30px'}}></ShoppingCartIcon>
+        Proceed Checkout
+        </button>
     </div>
   );
 }
