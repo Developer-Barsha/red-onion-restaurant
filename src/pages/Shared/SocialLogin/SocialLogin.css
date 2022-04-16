@@ -24,12 +24,12 @@
 }
 
 .social-btn:nth-child(2){
-    background-color: #006EE6;
-    color: white;
-}
-
-.social-btn:nth-child(1){
     background-color: white;
     color: black;
     border: 2px solid black;
+}
+
+.social-btn:nth-child(3){
+    background-color: #006EE6;
+    color: white;
 }

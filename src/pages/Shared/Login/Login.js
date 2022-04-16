@@ -54,7 +54,7 @@ const Login = () => {
 
 
     return (
-        <div className='mt-4'>
+        <div style={{marginTop:'100px'}}>
             <ToastContainer />
             <NavigateHome></NavigateHome>
             <img src={logo} width='200px' className='mb-2 d-flex justify-content-center' style={{ margin: '0 auto' }} alt='' />

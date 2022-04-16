@@ -4,22 +4,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import logo from '../../../images/logo2.png'
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signup = () => {
-    const [
-        createUserWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user,loading,error] = useCreateUserWithEmailAndPassword(auth);
     const navigate=useNavigate();
-
-    // if (loading) {
-    //     toast('...Loading')
-    // }
+    const [updateProfile, updating] = useUpdateProfile(auth);
 
     const handleFromSubmit = async (e) => {
         e.preventDefault();
@@ -37,6 +29,7 @@ const Signup = () => {
         }
 
         await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName:name });
 
         if (error) {
             toast(error.message);
@@ -50,7 +43,7 @@ const Signup = () => {
     } ,[user])
 
     return (
-        <div className='mt-4'>
+        <div style={{marginTop:'100px'}}>
             <ToastContainer />
             <NavigateHome></NavigateHome>
             <img src={logo} width='200px' className='mb-2 d-flex justify-content-center' style={{ margin: '0 auto' }} alt='' />

@@ -4,24 +4,28 @@ import Meal from '../Meal/Meal';
 const Breakfasts = () => {
     const [cart, setCart] = useContext(CartContext);
     const [breakfasts, setBreakfasts] = useState([]);
-    useEffect(()=>{
+    useEffect(() => {
         fetch('breakfast.json')
-        .then(res=>res.json())
-        .then(data=>setBreakfasts(data))
-    } ,[]);
-
-    console.log(cart);
+            .then(res => res.json())
+            .then(data => setBreakfasts(data))
+    }, []);
 
     const addToCart = (meal) => {
-        let addedItems=[...cart, meal];
-        setCart(addedItems);
+        if (cart.includes(meal) === !1) {
+            let addedItems = [...cart, meal];
+            setCart(addedItems);
+        } else {
+            alert('already added');
+        }
     };
 
     return (
-        <div className='meals'>
-            {
-                breakfasts.map(meal=><Meal key={meal.id} addToCart={addToCart} meal={meal}></Meal>)
-            }
+        <div>
+            <div className='meals'>
+                {
+                    breakfasts.map(meal => <Meal key={meal.id} addToCart={addToCart} meal={meal}></Meal>)
+                }
+            </div>
         </div>
     );
 };

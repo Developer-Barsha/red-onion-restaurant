@@ -4,7 +4,7 @@ import { SearchIcon } from '@heroicons/react/solid'
 
 const TopSection = () => {
     return (
-        <div className='top-section'>
+        <div className='top-section mt-5'>
             <h2>Best Food Waiting For You</h2>
             <div className='input-btn'>
                 <input type="text" placeholder='Search Food' name='search' />

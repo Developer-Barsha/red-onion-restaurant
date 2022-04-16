@@ -1,7 +1,4 @@
-// import React, { useState, useEffect } from 'react';
-// import useCart from '../../../hooks/useCart';
 import Cart from '../../Shared/Cart/Cart';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Meal.css'
 
@@ -10,7 +7,6 @@ const Meal = ({ meal, addToCart }) => {
 
     return (
         <div onClick={()=>addToCart(meal)} className='meal'>
-            <ToastContainer />
             <Cart
                 show={false}
             />

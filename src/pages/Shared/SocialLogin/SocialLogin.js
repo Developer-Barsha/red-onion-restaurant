@@ -1,6 +1,7 @@
 import React from 'react';
 import './SocialLogin.css';
 import auth from '../../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
 import { useSignInWithGoogle, useSignInWithFacebook, useSignInWithGithub } from 'react-firebase-hooks/auth';
 
 const SocialLogin = () => {
@@ -8,8 +9,13 @@ const SocialLogin = () => {
     const [signInWithFacebook, fbUser, fbLoading, fbError] = useSignInWithFacebook(auth);
     const [signInWithGithub, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
 
+    if(error || fbError || gitError){
+        toast((error||fbError||gitError).message);
+    }
+
     return (
         <div>
+            <ToastContainer/>
             <button onClick={() => signInWithGoogle()} className='social-btn'>
                 <img src="https://www.dtl.coventry.domains/wp-content/uploads/2020/07/Google-Logo.png" alt="" />
                 Continue With Google

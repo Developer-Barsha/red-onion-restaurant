@@ -6,21 +6,28 @@ const Dinners = () => {
     const [cart, setCart] = useContext(CartContext);
     const [dinners, setDinners] = useState([]);
 
-    const addToCart = (meal) => {
-        let addedItems = [...cart, meal];
-        setCart(addedItems);
-    };
-
     useEffect(() => {
         fetch('dinner.json')
             .then(res => res.json())
             .then(data => setDinners(data))
     }, []);
+
+    const addToCart = (meal) => {
+        if (cart.includes(meal) === !1) {
+            let addedItems = [...cart, meal];
+            setCart(addedItems);
+        } else {
+            alert('already added');
+        }
+    };
+
     return (
-        <div className='meals'>
-            {
-                dinners.map(meal => <Meal key={meal.id} addToCart={addToCart} meal={meal}></Meal>)
-            }
+        <div>
+            <div className='meals'>
+                {
+                    dinners.map(meal => <Meal key={meal.id} addToCart={addToCart} meal={meal}></Meal>)
+                }
+            </div>
         </div>
     );
 };
