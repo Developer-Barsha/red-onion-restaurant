@@ -20,10 +20,14 @@ const addToDb=id=>{
 
 // get cart using this function
 const getStoredCart=()=>{
+    let shoppingCart ={};
     const storedCart = localStorage.getItem('shopping-cart');
 
     if(storedCart){
-        const shoppingCart = JSON.parse(storedCart);
-        return shoppingCart;
+        shoppingCart = JSON.parse(storedCart);
     }
+
+    return shoppingCart;
 }
+
+export {addToDb, getStoredCart};

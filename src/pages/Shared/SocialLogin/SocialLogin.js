@@ -1,20 +1,26 @@
 import React from 'react';
-import './SocialLogin.css'
+import './SocialLogin.css';
+import auth from '../../../firebase.init';
+import { useSignInWithGoogle, useSignInWithFacebook, useSignInWithGithub } from 'react-firebase-hooks/auth';
 
 const SocialLogin = () => {
+    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithFacebook, fbUser, fbLoading, fbError] = useSignInWithFacebook(auth);
+    const [signInWithGithub, gitUser, gitLoading, gitError] = useSignInWithGithub(auth);
+
     return (
         <div>
-            <button className='social-btn'>
-            <img src="https://www.dtl.coventry.domains/wp-content/uploads/2020/07/Google-Logo.png" alt="" />                
+            <button onClick={() => signInWithGoogle()} className='social-btn'>
+                <img src="https://www.dtl.coventry.domains/wp-content/uploads/2020/07/Google-Logo.png" alt="" />
                 Continue With Google
             </button>
 
-            <button className='social-btn'>
+            <button onClick={() => signInWithFacebook()} className='social-btn'>
                 <img src="https://www.apkmirror.com/wp-content/uploads/2021/11/28/61a4889ec1a4d-384x384.png" alt="" />
                 Continue With FaceBook
             </button>
 
-            <button className='social-btn'>
+            <button onClick={() => signInWithGithub()} className='social-btn'>
                 <img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" alt="" />
                 Continue With GitHub
             </button>
