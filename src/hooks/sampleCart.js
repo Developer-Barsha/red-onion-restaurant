@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import { getStoredCart } from '../utilities/fakedb';
 
-const useCart=(products)=>{
+const SampleCart=(products)=>{
     const [cart, setCart] = useState([]);
 
     useEffect(()=>{
@@ -21,4 +21,4 @@ const useCart=(products)=>{
     return [cart, setCart];
 }
 
-export default useCart;
+export default SampleCart;

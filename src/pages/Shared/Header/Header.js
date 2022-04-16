@@ -24,9 +24,9 @@ const Header = () => {
                     onHide={() => setModalShow(false)}
                 />
 
-                <CustomLink to={'/'} onClick={() => setModalShow(true)}>{<ShoppingCartIcon style={{ width: '30px' }} />}
+                <button className='border-0 bg-white position-relative' to={'/'} onClick={() => setModalShow(true)}>{<ShoppingCartIcon style={{ width: '30px' }} />}
                     <Badge bg='danger' className='cart-badge d-flex justify-content-center align-items-center'>0</Badge>
-                </CustomLink>
+                </button>
                 {user ?
                     <button onClick={()=>signOut(auth)} className='text-dark border-0 bg-white fw-bolder'>SignOut</button>
                     :

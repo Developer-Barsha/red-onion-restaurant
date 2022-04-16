@@ -19,7 +19,6 @@ const Meal = ({ meal, addToCart }) => {
             <h4 className='pb-2 text-danger'>{name}</h4>
             <p>{description}</p>
             <h5 className='price'>$ <span>{price}</span></h5>
-            <button type="submit">Add To Cart</button>
         </div>
     );
 };

@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { CartContext } from '../../../App';
 import Meal from '../Meal/Meal';
 const Breakfasts = () => {
+    const [cart, setCart] = useContext(CartContext);
     const [breakfasts, setBreakfasts] = useState([]);
     useEffect(()=>{
         fetch('breakfast.json')
@@ -8,14 +10,10 @@ const Breakfasts = () => {
         .then(data=>setBreakfasts(data))
     } ,[]);
 
-    
-    const [cart, setCart] = useState([]);
     console.log(cart);
-    let addedItems=[];
 
     const addToCart = (meal) => {
-        console.log(addedItems);
-        addedItems=[...cart, meal];
+        let addedItems=[...cart, meal];
         setCart(addedItems);
     };
 
