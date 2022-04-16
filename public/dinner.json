@@ -1,47 +1,47 @@
 [
     {
-        "id":1, 
-        "name":"Rice With Beef",
+        "id":"d1", 
+        "name":"Salmon With Grapefruit",
         "photo":"https://i.ibb.co/r6QMJFN/dinner1.png",
         "price": 250,
         "description":"An ideal meal plan for your dinner"
     },
     
     {
-        "id":2, 
-        "name":"Fried Fish",
+        "id":"d2", 
+        "name":"Lemony Salmon Piccata",
         "photo":"https://i.ibb.co/TbfKCn3/dinner2.png",
         "price": 350,
         "description":"Fried Hilsha fish with some masala"
     },
     
     {
-        "id":3, 
-        "name":"Vegetable Meat",
+        "id":"d3", 
+        "name":"Pork Tenderloin",
         "photo":"https://i.ibb.co/jrG2KVN/dinner3.png",
         "price": 290,
         "description":"A lots of vegetable with meal of meat"
     },
 
     {
-        "id":4, 
-        "name":"Cheesy Pasta",
+        "id":"d4", 
+        "name":"Cheesy French Fries",
         "photo":"https://i.ibb.co/KGfcGgm/dinner4.png",
         "price": 300,
         "description":"Pasta baked with a lots of cheese"
     },
 
     {
-        "id":5, 
-        "name":"Meat With Salad",
+        "id":"d5", 
+        "name":"Garlic Butter Baked",
         "photo":"https://i.ibb.co/w6PYWVN/dinner5.png",
         "price": 150,
         "description":"Vegetable salad with meat"
     },
 
     {
-        "id":6, 
-        "name":"Fish With Salad",
+        "id":"d6", 
+        "name":"Baked Chicken",
         "photo":"https://i.ibb.co/djxwv4V/dinner6.png",
         "price": 200,
         "description":"Fish is served with salad"

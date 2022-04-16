@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal } from 'react-bootstrap';
 
 function Cart(props) {
+  // console.log(props.cart);
     return (
       <Modal
         {...props}
@@ -15,7 +16,7 @@ function Cart(props) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
+          <h4>Centered Modal {props?.cart}</h4>
           <p>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac

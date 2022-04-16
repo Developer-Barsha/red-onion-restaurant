@@ -1,6 +1,6 @@
 [
     {
-        "id":1, 
+        "id":"l1", 
         "name":"Healthy Meal Plan",
         "photo":"https://i.ibb.co/SvKPpNP/lunch1.png",
         "price": 250,
@@ -8,7 +8,7 @@
     },
     
     {
-        "id":2, 
+        "id":"l2", 
         "name":"Fried Chicken Bento",
         "photo":"https://i.ibb.co/WFz2ZNw/lunch2.png",
         "price": 350,
@@ -16,7 +16,7 @@
     },
     
     {
-        "id":3, 
+        "id":"l3", 
         "name":"Tarragon Rubbed Salmon",
         "photo":"https://i.ibb.co/n07h9hx/lunch3.png",
         "price": 290,
@@ -24,7 +24,7 @@
     },
 
     {
-        "id":4, 
+        "id":"l4", 
         "name":"Inidan Lunch",
         "photo":"https://i.ibb.co/LnhwCbR/lunch4.png",
         "price": 300,
@@ -32,7 +32,7 @@
     },
 
     {
-        "id":5, 
+        "id":"l5", 
         "name":"Beef Steak",
         "photo":"https://i.ibb.co/qFnDrk2/lunch5.png",
         "price": 150,
@@ -40,7 +40,7 @@
     },
 
     {
-        "id":6, 
+        "id":"l6", 
         "name":"Gazzed Salmon Pepper",
         "photo":"https://i.ibb.co/5Lpt7c7/lunch6.png",
         "price": 200,

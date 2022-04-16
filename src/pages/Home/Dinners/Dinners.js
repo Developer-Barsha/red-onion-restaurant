@@ -4,7 +4,7 @@ import Meal from '../Meal/Meal';
 const Dinners = () => {
     const [dinners, setDinners] = useState([]);
     useEffect(()=>{
-        fetch('lunch.json')
+        fetch('dinner.json')
         .then(res=>res.json())
         .then(data=>setDinners(data))
     } ,[]);
