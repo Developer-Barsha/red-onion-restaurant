@@ -1,0 +1,14 @@
+form textarea{
+    resize:none; 
+    width:350px;
+    height:90px;
+    margin-top:8px;
+    border-radius:20px;
+    padding:10px 15px;
+    outline: none;
+    border: 1px solid #999;
+}
+form textarea:focus{
+    outline: 1px solid crimson;
+    border: 0;
+}

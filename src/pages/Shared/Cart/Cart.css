@@ -3,21 +3,6 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.close-btn{
-    background-color: crimson;
-    color: white;
-    border: 2px solid white;
-    padding: 8px 25px;
-    border-radius: 30px;
-}
-
-.close-btn:hover{
-    border: 2px solid crimson;
-    color: crimson;
-    background-color: white;
-    transition: 0.5s;
-}
-
 @media only screen and (max-width:1000px){
     .cart{
         grid-template-columns: repeat(1, 1fr);

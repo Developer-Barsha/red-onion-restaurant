@@ -43,7 +43,7 @@ const Header = () => {
                             <p className={`position-absolute bg-danger p-1 ${showUser ? '' : 'd-none'}`} style={{ top: '50px', left: '0', width: '130px' }}>{user?.displayName}</p>
                         </button>
                     }
-                    <CustomLink className='signup-btn' to={'/signup'}>Signup</CustomLink>
+                    <CustomLink className='custom-btn' to={'/signup'}>Signup</CustomLink>
                 </nav>}
             <div onClick={() => setShowMenu(!showMenu)} className='menu-icon'>
                 {

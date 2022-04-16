@@ -5,9 +5,11 @@ import Breakfasts from '../Breakfasts/Breakfasts';
 import Lunches from '../Lunches/Lunches';
 import Dinners from '../Dinners/Dinners';
 import './Tabs.css';
+import { useNavigate } from 'react-router-dom';
 
 function ControlledTabs() {
   const [key, setKey] = useState('lunches');
+  const navigate=useNavigate();
 
   return (
     <div>
@@ -28,6 +30,7 @@ function ControlledTabs() {
           <Dinners />
         </Tab>
       </Tabs>
+      <button onClick={()=>navigate='/checkout'}>Proceed Checkout</button>
     </div>
   );
 }

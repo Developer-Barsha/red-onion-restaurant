@@ -21,12 +21,11 @@ function Cart(props) {
       </Modal.Header>
       <Modal.Body>
         <div className='cart'>
-          <h3>{cart.length ===0 && 'Cart is Empty'}</h3>
-        {cart.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem}></CartItem>)}
+        {cart.length ===0 ? 'Cart is Empty' : cart.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem}></CartItem>)}
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <button className='close-btn' onClick={props.onHide}>Close</button>
+        <button className='custom-btn' onClick={props.onHide}>Close</button>
       </Modal.Footer>
     </Modal>
   );
