@@ -21,6 +21,7 @@ function Cart(props) {
       </Modal.Header>
       <Modal.Body>
         <div className='cart'>
+          <h3>{cart.length ===0 && 'Cart is Empty'}</h3>
         {cart.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem}></CartItem>)}
         </div>
       </Modal.Body>

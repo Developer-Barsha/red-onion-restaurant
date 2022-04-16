@@ -4,6 +4,7 @@ footer{
     background-color: #07121c;
     width: 100%;
 }
+
 footer ul li{
     padding: 7px 10px;
     font-size: 15px;
@@ -19,5 +20,9 @@ footer ul li:hover{
     div{
         margin: 15px 0;
         flex-direction: column;
+    }
+
+    footer p{
+        padding-left: 40px;
     }
 }

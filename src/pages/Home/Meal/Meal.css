@@ -1,9 +1,10 @@
 .meal{
-    width: 320px;
+    width: 300px;
     border-radius: 10px;
     padding: 0 10px;
     text-align: center;
-    margin: 10px auto;
+    margin: auto;
+    padding: 10px auto;
 }
 .meal:hover{
     box-shadow: 2px 2px 15px #999;

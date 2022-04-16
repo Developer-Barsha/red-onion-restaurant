@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Tab } from 'react-bootstrap';
 import Tabs from 'react-bootstrap/Tabs'
 import Breakfasts from '../Breakfasts/Breakfasts';
@@ -7,14 +7,16 @@ import Dinners from '../Dinners/Dinners';
 import './Tabs.css';
 
 function ControlledTabs() {
-    const [key, setKey] = useState('lunches');
-  
-    return (
+  const [key, setKey] = useState('lunches');
+
+  return (
+    <div>
+      <h4 className='text-center mt-5 text-danger'>Click on item to add to Cart</h4>
       <Tabs
         id="controlled-tab-example"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="mt-5 d-flex justify-content-center border-0"
+        className="mt-3 d-flex justify-content-center border-0"
       >
         <Tab eventKey="breakfasts" title="Breakfasts">
           <Breakfasts />
@@ -26,7 +28,8 @@ function ControlledTabs() {
           <Dinners />
         </Tab>
       </Tabs>
-    );
-  }
+    </div>
+  );
+}
 
 export default ControlledTabs;

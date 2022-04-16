@@ -48,9 +48,9 @@ const Header = () => {
             <div onClick={() => setShowMenu(!showMenu)} className='menu-icon'>
                 {
                     showMenu ?
-                        <MenuAlt2Icon width={'30px'}></MenuAlt2Icon>
-                        :
-                        <XIcon width={'30px'}></XIcon>
+                    <XIcon width={'30px'}></XIcon>
+                    :
+                    <MenuAlt2Icon width={'30px'}></MenuAlt2Icon>
                 }
             </div>
         </header>
