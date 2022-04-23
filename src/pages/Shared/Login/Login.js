@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import NavigateHome from '../NavigateHome/NavigateHome';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -53,6 +53,12 @@ const Login = () => {
         }
     }
 
+    useEffect(()=>{
+        if (user) {
+            navigate('/');
+            console.log(user);
+        }
+    } ,[user])
 
 
     return (
