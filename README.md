@@ -1,6 +1,6 @@
 # Red Onion Restaurant 
 
-### Livelink: (click to open)[https://red-onion-resturant.netlify.app/]
+### Livelink: [click to open](https://red-onion-resturant.netlify.app/)
 
 ## Technologies: 
 CSS, Bootstrap, Hero Icons, React, Firebase, React Firebase Hooks, React
